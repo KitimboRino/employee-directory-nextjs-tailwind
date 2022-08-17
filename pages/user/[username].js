@@ -41,13 +41,12 @@ function UserPage({ user }) {
                     </div>
 
                     <div className="bg-gray-800 bg-opacity-50 absolute flex items-end w-full h-full top-0 left-0 p-8">
-                        <div className="bg-gray-300 w-20 rounded-full mr-4">
-                        </div>
                         <Image
                             src={user.avatar}
                             alt={user.username}
-                            layout='fill'
-                            objectFit='cover'
+                            className="bg-gray-300 w-20 rounded-full mr-4"
+                            width={100}
+                            height={100}
                         />
                         <div>
                             <h1 className="font-bold text-3xl">
