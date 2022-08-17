@@ -31,17 +31,24 @@ function UserPage({ user }) {
             <div className="dark:bg-gray-800 text-white w-12/12
                             shadow-lg sm:w-9/12 sm:m-auto">
                 <div className="relative sm:w-full">
-                    <image
-                        src={user.cover_image}
-                        alt={user.username}
-                        className="w-full h-96 object-cover object-center"
-                    />
+                    <div className="w-full h-96 object-cover object-center"
+                    >
+                        <Image
+                            src={user.cover_image}
+                            alt={user.username}
+                            layout='fill'
+                            objectFit='cover'
+                        />
+                    </div>
+
                     <div className="bg-gray-800 bg-opacity-50 absolute
                                     flex items-end w-full h-full top-0 left-0 p-8">
-                        <image
+                        <Image
                             src={user.avatar}
                             alt={user.username}
                             className="bg-gray-300 w-20 rounded-full mr-4"
+                            width={100}
+                            height={100}
                         />
                         <div>
                             <h1 className="font-bold text-3xl">
