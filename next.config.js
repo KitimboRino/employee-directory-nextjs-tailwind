@@ -8,8 +8,3 @@ const nextConfig = {
 }
 
 module.exports = nextConfig
-// module.exports = nextConfig, {
-//   images: {
-//     domains: ['robohash.org', 'picsum.photos']
-//   }
-// };
